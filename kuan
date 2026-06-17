@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>日本旅遊景點</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f5f0eb;
+      font-family: "Microsoft JhengHei", "微軟正黑體", "Noto Sans TC", sans-serif;
+      padding: 50px 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      background-color: #ffffff;
+      border-radius: 4px;
+      border: 1px solid #ddd;
+      padding: 40px 48px;
+      max-width: 700px;
+      width: 100%;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      font-size: 26px;
+      color: #1a1a2e;
+      border-left: 5px solid #c0392b;
+      padding-left: 14px;
+      margin-bottom: 10px;
+      letter-spacing: 0.05em;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      color: #888;
+      margin-bottom: 32px;
+      padding-left: 20px;
+    }
+
+    .section-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: #999;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      margin-top: 32px;
+    }
+
+    ul {
+      list-style: none;
+      border-top: 1px solid #eee;
+    }
+
+    ul li {
+      border-bottom: 1px solid #eee;
+      padding: 14px 4px;
+    }
+
+    /* ========== CSS Links 重點 ========== */
+
+    /* 未訪問過的連結 */
+    a:link {
+      color: #2c3e8c;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    /* 已訪問過的連結 */
+    a:visited {
+      color: #9b59b6;
+      text-decoration: none;
+    }
+
+    /* 滑鼠移上去 */
+    a:hover {
+      color: #c0392b;
+      text-decoration: underline;
+    }
+
+    /* 點擊當下 */
+    a:active {
+      color: #e67e22;
+      font-weight: 700;
+    }
+
+    /* ===================================== */
+
+    .legend {
+      margin-top: 36px;
+      background-color: #f9f9f9;
+      border: 1px solid #e0e0e0;
+      border-radius: 4px;
+      padding: 20px 24px;
+    }
+
+    .legend h2 {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 14px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      font-size: 14px;
+      color: #444;
+      gap: 10px;
+    }
+
+    .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .dot.link    { background-color: #2c3e8c; }
+    .dot.visited { background-color: #9b59b6; }
+    .dot.hover   { background-color: #c0392b; }
+    .dot.active  { background-color: #e67e22; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>日本旅遊景點</h1>
+    <p class="subtitle">點擊連結，觀察顏色的變化</p>
+
+    <p class="section-title">推薦景點</p>
+    <ul>
+      <li><a href="https://www.japan.travel/tw/spot/1569/" target="_blank">🗻 富士山 — 日本第一高峰</a></li>
+      <li><a href="https://www.japan.travel/tw/spot/1341/" target="_blank">⛩️ 伏見稻荷大社 — 千本鳥居</a></li>
+      <li><a href="https://www.japan.travel/tw/spot/1547/" target="_blank">🏯 大阪城 — 歷史名城</a></li>
+      <li><a href="https://www.japan.travel/tw/spot/2044/" target="_blank">🌸 上野公園 — 賞櫻勝地</a></li>
+      <li><a href="https://www.japan.travel/tw/spot/1586/" target="_blank">🦌 奈良公園 — 與鹿同行</a></li>
+    </ul>
+
+    <div class="legend">
+      <h2>CSS Links 說明</h2>
+      <div class="legend-item"><div class="dot link"></div> a:link　　未曾點擊過的連結（深藍）</div>
+      <div class="legend-item"><div class="dot visited"></div> a:visited　已點擊過的連結（紫色）</div>
+      <div class="legend-item"><div class="dot hover"></div> a:hover　　滑鼠移上去（紅色 + 底線）</div>
+      <div class="legend-item"><div class="dot active"></div> a:active　 點擊當下瞬間（橘色 + 粗體）</div>
+    </div>
+  </div>
+</body>
+</html>
